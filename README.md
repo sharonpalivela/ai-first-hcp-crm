@@ -64,8 +64,10 @@ Interactions can be saved into a SQLite database using the "Save Interaction" fe
 - SQLAlchemy
 
 ## AI / Orchestration
-- LangGraph
+## AI / Orchestration
+- LangGraph StateGraph
 - Groq API
+- Llama 3.3 70B Versatile
 
 ---
 
@@ -165,7 +167,11 @@ System Output:
 
 # Notes
 
-The assignment originally referenced the `gemma2-9b-it` Groq model. Since the model has been deprecated by Groq, an alternative supported Groq model was used during development.
+# Notes
+
+The assignment originally referenced the `gemma2-9b-it` Groq model. Since the model has been deprecated and is no longer supported by Groq, the application uses `llama-3.3-70b-versatile` as the active fallback model.
+
+LangGraph StateGraph is used to orchestrate tool routing and AI workflow execution. Groq LLM is used for interaction summarization and AI-assisted CRM processing.
 
 ---
 
@@ -180,5 +186,4 @@ The assignment originally referenced the `gemma2-9b-it` Groq model. Since the mo
 ---
 
 # Author
-
 Built as part of the AI First HCP CRM Assignment.
